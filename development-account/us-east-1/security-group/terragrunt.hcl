@@ -1,0 +1,23 @@
+# The Child Configuration
+
+include "root" {
+  path = find_in_parent_folders("root.hcl")
+}
+
+include "envcommon" {
+  path = "${dirname(find_in_parent_folders("root.hcl"))}/_envcommon/security-group.hcl"
+}
+
+# VPC Dependency Removed - Using Default VPC
+# dependency "vpc" {
+#   config_path = "../vpc"
+# }
+
+inputs = {
+  name   = "alb-sg"
+  # REPLACE WITH YOUR DEFAULT VPC ID
+  vpc_id = "vpc-xxxx (Default VPC)"
+  
+  ingress_rules = ["http-80-tcp", "https-443-tcp"]
+  ingress_cidr_blocks = ["0.0.0.0/0"]
+}
