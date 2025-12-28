@@ -1,6 +1,5 @@
 terraform {
-  # source = "git::https://github.com/YOUR_ORG/terraform-patterns-modules.git//ecs-cluster?ref=v1.0.0"
-  source = "../../../../terraform-patterns-modules//ecs-cluster"
+  source = "git::https://github.com/salsiy/terraform-patterns-modules.git//ecs-cluster?ref=v0.1.0"
 }
 
 inputs = {

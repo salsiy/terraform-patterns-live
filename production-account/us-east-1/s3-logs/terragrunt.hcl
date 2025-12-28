@@ -5,7 +5,7 @@ include "root" {
 }
 
 include "envcommon" {
-  path = "${dirname(find_in_parent_folders("root.hcl"))}/_envcommon/s3-logs.hcl"
+  path = "${dirname(find_in_parent_folders("account.hcl"))}/_envcommon/s3-logs.hcl"
 }
 
 inputs = {
