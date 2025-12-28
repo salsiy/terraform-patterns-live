@@ -6,7 +6,7 @@ This repository contains the live infrastructure configurations, managed by **Te
 
 - **root.hcl**: The parent configuration. Generates provider and backend configuration.
 - **tags.yaml**: Global tags applied to all resources.
-- **_envcommon/**: DRY configurations. Contains the module source and common inputs for every stack.
+- **[account-name]/_envcommon/**: DRY configurations scoped to the account.
 - **[account-name]/[region]/[env]/**: The live environments.
 
 ## How to Add a New Environment
@@ -28,7 +28,7 @@ include "root" {
 
 # Inherit module source and common variables
 include "envcommon" {
-  path = "${dirname(find_in_parent_folders("root.hcl"))}/_envcommon/ecs-cluster.hcl"
+  path = "${dirname(find_in_parent_folders("account.hcl"))}/_envcommon/ecs-cluster.hcl"
 }
 
 inputs = {
