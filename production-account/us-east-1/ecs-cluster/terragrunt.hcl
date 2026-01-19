@@ -1,11 +1,9 @@
-# The Child Configuration
-
 include "root" {
   path = find_in_parent_folders("root.hcl")
 }
 
 include "envcommon" {
-  path = "${dirname(find_in_parent_folders("account.hcl"))}/_envcommon/ecs-cluster.hcl"
+  path = "${dirname(find_in_parent_folders("root.hcl"))}/_envcommon/ecs-cluster.hcl"
 }
 
 inputs = {
