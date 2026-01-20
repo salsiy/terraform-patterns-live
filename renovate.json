@@ -16,55 +16,65 @@
     "packageRules": [
         {
             "matchDatasources": [
-                "git-tags"
+                "git-tags",
+                "terraform-module"
             ],
             "matchPackageNames": [
-                "https://github.com/salsiy/terraform-patterns-modules"
+                "github.com/salsiy/terraform-patterns-modules"
             ],
             "groupName": "infrastructure modules",
             "labels": [
                 "renovate/modules"
-            ]
+            ],
+            "versioning": "semver"
         },
         {
             "matchDatasources": [
-                "git-tags"
+                "git-tags",
+                "terraform-module"
             ],
             "matchPackageNames": [
-                "https://github.com/salsiy/terraform-patterns-modules"
+                "github.com/salsiy/terraform-patterns-modules"
             ],
             "matchCurrentValue": "/^alb-v/",
-            "extractVersion": "^alb-v(?<version>\\d+\\.\\d+\\.\\d+)$"
+            "extractVersion": "^alb-v(?<version>.*)$",
+            "versioning": "semver"
         },
         {
             "matchDatasources": [
-                "git-tags"
+                "git-tags",
+                "terraform-module"
             ],
             "matchPackageNames": [
-                "https://github.com/salsiy/terraform-patterns-modules"
+                "github.com/salsiy/terraform-patterns-modules"
             ],
             "matchCurrentValue": "/^ecs-cluster-v/",
-            "extractVersion": "^ecs-cluster-v(?<version>\\d+\\.\\d+\\.\\d+)$"
+            "extractVersion": "^ecs-cluster-v(?<version>.*)$",
+            "versioning": "semver"
         },
         {
             "matchDatasources": [
-                "git-tags"
+                "git-tags",
+                "terraform-module"
             ],
             "matchPackageNames": [
-                "https://github.com/salsiy/terraform-patterns-modules"
+                "github.com/salsiy/terraform-patterns-modules"
             ],
             "matchCurrentValue": "/^s3-private-v/",
-            "extractVersion": "^s3-private-v(?<version>\\d+\\.\\d+\\.\\d+)$"
+            "extractVersion": "^s3-private-v(?<version>.*)$",
+            "versioning": "semver"
         },
         {
             "matchDatasources": [
-                "git-tags"
+                "git-tags",
+                "terraform-module"
             ],
             "matchPackageNames": [
-                "https://github.com/salsiy/terraform-patterns-modules"
+                "github.com/salsiy/terraform-patterns-modules"
             ],
             "matchCurrentValue": "/^security-group-v/",
-            "extractVersion": "^security-group-v(?<version>\\d+\\.\\d+\\.\\d+)$"
+            "extractVersion": "^security-group-v(?<version>.*)$",
+            "versioning": "semver"
         },
         {
             "matchFileNames": [
