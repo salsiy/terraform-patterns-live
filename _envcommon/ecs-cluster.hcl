@@ -1,6 +1,4 @@
-terraform {
-  source = "git::https://github.com/salsiy/terraform-patterns-modules.git//ecs-cluster?ref=ecs-cluster-v0.1.0"
-}
+
 
 inputs = {
   # These are placeholders for the example logic.

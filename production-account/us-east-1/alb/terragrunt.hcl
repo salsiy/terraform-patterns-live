@@ -1,5 +1,9 @@
 # The Child Configuration
 
+terraform {
+  source = "git::https://github.com/salsiy/terraform-patterns-modules.git//alb?ref=alb-v0.1.0"
+}
+
 include "root" {
   path = find_in_parent_folders("root.hcl")
 }

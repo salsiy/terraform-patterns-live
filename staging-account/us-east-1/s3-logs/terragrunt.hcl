@@ -1,6 +1,10 @@
 # The Child Configuration
 
 # 1. Inherit settings from root
+terraform {
+  source = "git::https://github.com/salsiy/terraform-patterns-modules.git//s3-private?ref=s3-private-v0.1.0"
+}
+
 include "root" {
   path = find_in_parent_folders("root.hcl")
 }
