@@ -1,7 +1,7 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "config:base",
+        "config:recommended",
         ":dependencyDashboard"
     ],
     "enabledManagers": [
@@ -9,8 +9,8 @@
         "terraform"
     ],
     "terragrunt": {
-        "fileMatch": [
-            "\\.hcl$"
+        "managerFilePatterns": [
+            "/\\.hcl$/"
         ]
     },
     "packageRules": [
@@ -24,13 +24,13 @@
             ]
         },
         {
-            "matchPaths": [
+            "matchFileNames": [
                 "**/development-account/**"
             ],
             "automerge": true
         },
         {
-            "matchPaths": [
+            "matchFileNames": [
                 "**/production-account/**"
             ],
             "minimumReleaseAge": "7 days"
