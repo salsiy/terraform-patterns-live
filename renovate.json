@@ -17,6 +17,7 @@
         {
             "matchDatasources": [
                 "git-tags",
+                "github-tags",
                 "terraform-module"
             ],
             "matchPackagePatterns": [
@@ -31,6 +32,7 @@
         {
             "matchDatasources": [
                 "git-tags",
+                "github-tags",
                 "terraform-module"
             ],
             "matchPackagePatterns": [
@@ -43,6 +45,7 @@
         {
             "matchDatasources": [
                 "git-tags",
+                "github-tags",
                 "terraform-module"
             ],
             "matchPackagePatterns": [
@@ -55,6 +58,7 @@
         {
             "matchDatasources": [
                 "git-tags",
+                "github-tags",
                 "terraform-module"
             ],
             "matchPackagePatterns": [
@@ -67,6 +71,7 @@
         {
             "matchDatasources": [
                 "git-tags",
+                "github-tags",
                 "terraform-module"
             ],
             "matchPackagePatterns": [
