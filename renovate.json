@@ -11,7 +11,8 @@
     "terragrunt": {
         "managerFilePatterns": [
             "/\\.hcl$/"
-        ]
+        ],
+        "versioning": "regex:^((?<compatibility>.*)-v|v*)(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
     },
     "packageRules": [
         {
@@ -24,58 +25,6 @@
             "labels": [
                 "renovate/modules"
             ],
-            "matchPackageNames": [
-                "/terraform-patterns-modules/"
-            ]
-        },
-        {
-            "matchDatasources": [
-                "git-tags",
-                "github-tags",
-                "terraform-module"
-            ],
-            "matchCurrentValue": "/^alb-v/",
-            "extractVersion": "^alb-v(?<version>.*)$",
-            "versioning": "semver",
-            "matchPackageNames": [
-                "/terraform-patterns-modules/"
-            ]
-        },
-        {
-            "matchDatasources": [
-                "git-tags",
-                "github-tags",
-                "terraform-module"
-            ],
-            "matchCurrentValue": "/^ecs-cluster-v/",
-            "extractVersion": "^ecs-cluster-v(?<version>.*)$",
-            "versioning": "semver",
-            "matchPackageNames": [
-                "/terraform-patterns-modules/"
-            ]
-        },
-        {
-            "matchDatasources": [
-                "git-tags",
-                "github-tags",
-                "terraform-module"
-            ],
-            "matchCurrentValue": "/^s3-private-v/",
-            "extractVersion": "^s3-private-v(?<version>.*)$",
-            "versioning": "semver",
-            "matchPackageNames": [
-                "/terraform-patterns-modules/"
-            ]
-        },
-        {
-            "matchDatasources": [
-                "git-tags",
-                "github-tags",
-                "terraform-module"
-            ],
-            "matchCurrentValue": "/^security-group-v/",
-            "extractVersion": "^security-group-v(?<version>.*)$",
-            "versioning": "semver",
             "matchPackageNames": [
                 "/terraform-patterns-modules/"
             ]
