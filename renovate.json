@@ -19,62 +19,62 @@
                 "git-tags",
                 "terraform-module"
             ],
-            "matchPackagePatterns": [
-                "terraform-patterns-modules"
-            ],
             "groupName": "infrastructure modules",
             "labels": [
                 "renovate/modules"
             ],
-            "versioning": "semver"
+            "versioning": "semver",
+            "matchPackageNames": [
+                "/terraform-patterns-modules/"
+            ]
         },
         {
             "matchDatasources": [
                 "git-tags",
                 "terraform-module"
-            ],
-            "matchPackagePatterns": [
-                "terraform-patterns-modules"
             ],
             "matchCurrentValue": "/^alb-v/",
             "extractVersion": "^alb-v(?<version>.*)$",
-            "versioning": "semver"
+            "versioning": "semver",
+            "matchPackageNames": [
+                "/terraform-patterns-modules/"
+            ]
         },
         {
             "matchDatasources": [
                 "git-tags",
                 "terraform-module"
-            ],
-            "matchPackagePatterns": [
-                "terraform-patterns-modules"
             ],
             "matchCurrentValue": "/^ecs-cluster-v/",
             "extractVersion": "^ecs-cluster-v(?<version>.*)$",
-            "versioning": "semver"
+            "versioning": "semver",
+            "matchPackageNames": [
+                "/terraform-patterns-modules/"
+            ]
         },
         {
             "matchDatasources": [
                 "git-tags",
                 "terraform-module"
-            ],
-            "matchPackagePatterns": [
-                "terraform-patterns-modules"
             ],
             "matchCurrentValue": "/^s3-private-v/",
             "extractVersion": "^s3-private-v(?<version>.*)$",
-            "versioning": "semver"
+            "versioning": "semver",
+            "matchPackageNames": [
+                "/terraform-patterns-modules/"
+            ]
         },
         {
             "matchDatasources": [
                 "git-tags",
                 "terraform-module"
             ],
-            "matchPackagePatterns": [
-                "terraform-patterns-modules"
-            ],
             "matchCurrentValue": "/^security-group-v/",
             "extractVersion": "^security-group-v(?<version>.*)$",
-            "versioning": "semver"
+            "versioning": "semver",
+            "matchPackageNames": [
+                "/terraform-patterns-modules/"
+            ]
         },
         {
             "matchFileNames": [
