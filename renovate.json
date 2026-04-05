@@ -22,9 +22,6 @@
                 "terraform-module"
             ],
             "groupName": "infrastructure modules",
-            "labels": [
-                "renovate/modules"
-            ],
             "matchPackageNames": [
                 "/terraform-patterns-modules/"
             ]
