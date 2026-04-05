@@ -1,5 +1,5 @@
 terraform {
-  source = "git::https://github.com/salsiy/terraform-patterns-modules.git//ecs-cluster?ref=ecs-cluster-v0.1.0"
+  source = "github.com/salsiy/terraform-patterns-modules//ecs-cluster?ref=ecs-cluster-v0.1.0"
 }
 
 include "root" {

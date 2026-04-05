@@ -1,5 +1,5 @@
 terraform {
-  source = "git::https://github.com/salsiy/terraform-patterns-modules.git//security-group?ref=security-group-v0.1.0"
+  source = "github.com/salsiy/terraform-patterns-modules//security-group?ref=security-group-v0.1.0"
 }
 
 include "root" {
