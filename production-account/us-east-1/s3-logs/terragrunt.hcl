@@ -1,7 +1,7 @@
 # The Child Configuration
 
 terraform {
-  source = "github.com/salsiy/terraform-patterns-modules//s3-private?ref=s3-private-v0.1.0"
+  source = "github.com/salsiy/terraform-patterns-modules//s3-private?ref=s3-private-v0.2.0"
 }
 
 include "root" {
